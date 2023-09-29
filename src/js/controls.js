@@ -9,7 +9,7 @@ export class Controls{
         const { pathname } = window.location;
         const body = document.querySelector('body');
         const page = pathname.replace('/', '');
-
+        
         switch(page) {
             case '':
                 document.querySelector(`#home`).classList.add('active');

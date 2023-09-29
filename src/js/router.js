@@ -1,3 +1,6 @@
+import { Controls } from './controls.js';
+const controls = new Controls();
+
 export class Router{
     routes = {};
 
@@ -12,6 +15,7 @@ export class Router{
         window.history.pushState({}, "", event.target.href);
 
         this.handle();
+        controls.run();
     }
     
     handle(){
